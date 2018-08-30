@@ -263,7 +263,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .container-header{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .add-account{
     border: none;
@@ -350,7 +350,50 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     color: #B2B2B2;
     font-size: 24px;
 }
+.social li a i:hover{
+    transition: .3s;
+    color: #5E0DFF;
+}
 .social-nav{
     display: flex;
     justify-content: flex-end;
+}
+.down-btn{
+    position: absolute;
+    cursor: pointer;
+}
+.down-btn span{
+    position: relative;
+    padding-left: 36px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #B3B3B3;
+
+}
+.down-btn span:before{
+    content: '';
+    position: absolute;
+    background: url("../../images/scroll-icon.svg") no-repeat;
+    width: 16px;
+    height: 24px;
+    left: 0;
+    top: -4px;
+}
+.down-btn span:hover{
+    transition: .3s;
+    color: #262626;
+}
+.down-btn span:hover:before{
+    content: '';
+    position: absolute;
+    background: url("../../images/scroll-icon-hover.svg") no-repeat;
+    width: 16px;
+    height: 24px;
+    left: 0;
+    top: -4px;
+    transition: .3s;
 }
