@@ -282,9 +282,13 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     width: 240px;
     cursor: pointer;
 }
-.add-account:hover{
+.add-account:hover,
+.more-info:hover{
     transition: .3s;
     background-color: #6E26FF;
+}
+.more-info:hover{
+    color: #ffffff;
 }
 .wrapper-slider{
     max-width: 570px;
@@ -397,3 +401,227 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     top: -4px;
     transition: .3s;
 }
+
+/*------------------------------section-----------------*/
+
+.section-block{
+    padding: 150px 0;
+    background-color: #FFFFFF;
+}
+.header-section h2{
+    font-family: 'Mariupol';
+    line-height: normal;
+    font-size: 54px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #262626;
+}
+.header-section p{
+    font-family: 'Mariupol';
+    line-height: 24px;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #4C4C4C;
+}
+.margin-bottom-40{
+    margin-bottom: 40px;
+}
+.for-whom-wrapper{
+    max-width: 353px;
+    border: none;
+    margin-right: 40px;
+}
+.for-whom-wrapper:last-child{
+    margin-right: 0;
+}
+.for-whom{
+    max-width: 353px;
+    max-height: 200px;
+}
+.card-title-block{
+    padding: 0;
+    cursor: pointer;
+}
+.card-title-block h3{
+    margin: 40px 0;
+}
+.card-title-block h3 a{
+    position: relative;
+}
+.title{
+    font-family: 'Mariupol';
+    line-height: 24px;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    color: #262626;
+    position: relative;
+}
+.card-title-block:hover .title{
+    padding-left: 60px;
+    color: #5E0DFF;
+    transition: .3s;
+}
+.card-title-block p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #4C4C4C;
+}
+.line{
+    height: 2px;
+    width: 40px;
+    left: 0;
+    background-color: #5E0DFF;
+    display: none;
+    position: absolute;
+    top: 7px;
+}
+.card-title-block:hover .line{
+    display: block;
+    transition: .3s;
+}
+.container-card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 100px 0;
+}
+.more-info{
+    border: none;
+    background-color: #5E0DFF;
+    border-radius: 30px;
+    padding: 14px;
+    width: 240px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.background-grey{
+    background-color: #F2F2F2;
+}
+.block-card{
+    background-color: #ffffff;
+    padding: 40px 20px;
+    max-width: 353px;
+    width: 100%;
+    cursor: pointer;
+    margin-right: 40px;
+}
+.block-card:last-child{
+    margin-right: 0;
+}
+.block-card:hover{
+    transition: .3s;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+.block-card:hover .title-card{
+    transition: .3s;
+    color: #5E0DFF;
+}
+.title-card{
+    font-family: 'Mariupol';
+    line-height: 24px;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    color: #262626;
+    margin-bottom: 40px;
+}
+.info-card{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #4C4C4C;
+}
+.wrapper-block{
+    display: flex;
+    margin-bottom: 40px;
+}
+.wrapper-block:last-child{
+    margin-bottom: 0;
+}
+.monitor,
+.rocket,
+.keyboard,
+.reliable,
+.wifi,
+.crown{
+    position: relative;
+    padding-left: 44px;
+}
+.monitor:before{
+    content: '';
+    position: absolute;
+    background: url("../../images/monitor.svg") no-repeat center;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+}
+.rocket:before{
+    content: '';
+    position: absolute;
+    background: url("../../images/rocket.svg") no-repeat center;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+}
+.keyboard:before{
+    content: '';
+    position: absolute;
+    background: url("../../images/kayboard.svg") no-repeat center;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+}
+.reliable:before{
+    content: '';
+    position: absolute;
+    background: url("../../images/reliable.svg") no-repeat center;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+}
+.wifi:before{
+    content: '';
+    position: absolute;
+    background: url("../../images/wifi.svg") no-repeat center;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+}
+.crown:before{
+    content: '';
+    position: absolute;
+    background: url("../../images/crown.svg") no-repeat center;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+}
+.margin-bottom-100{
+    margin-bottom: 100px;
+}
+
