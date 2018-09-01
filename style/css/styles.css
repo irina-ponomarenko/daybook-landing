@@ -638,6 +638,7 @@ ul#tabs {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #E5E5E5;
+    position:relative;
 }
 
 ul#tabs li {
@@ -673,13 +674,26 @@ ul#tabs li.selected .number-tabs {
 ul#tabs li.selected{
     position: relative;
 }
-ul#tabs li.selected:before{
-    content: '';
+.borders{
     position: absolute;
     height: 2px;
-    width: 100%;
+    width: 25%;
     background-color: #5E0DFF;
     bottom: -2px;
+    left: 0;
+    transition: .3s linear;
+}
+ul#tabs li.selected:nth-child(1) ~ .borders {
+    left:0;
+}
+ul#tabs li.selected:nth-child(2) ~ .borders {
+    left:25%;
+}
+ul#tabs li.selected:nth-child(3) ~ .borders {
+    left:50%;
+}
+ul#tabs li.selected:nth-child(4) ~ .borders {
+    left: 75%;
 }
 ul#tabs li a {
     color: #42454a;
