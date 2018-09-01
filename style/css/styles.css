@@ -631,3 +631,87 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     padding-top: 29px;
 }
 
+/*-----------------tabs---------------*/
+
+ul#tabs {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #E5E5E5;
+}
+
+ul#tabs li {
+    padding: 15px 0;
+    float: left;
+    display: inline;
+    width: 100%;
+    cursor: pointer;
+}
+ul#tabs li a{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+ul#tabs li a h3,
+ul#tabs li a span{
+    font-family: 'Mariupol';
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    color: #262626;
+}
+.number-tabs{
+    margin-right: 10px;
+    display: none;
+}
+
+ul#tabs li.selected .number-tabs {
+   display: block;
+    color: #5E0DFF;
+}
+ul#tabs li.selected{
+    position: relative;
+}
+ul#tabs li.selected:before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #5E0DFF;
+    bottom: -2px;
+}
+ul#tabs li a {
+    color: #42454a;
+    text-decoration: none;
+}
+div.tabContent {
+    display: none;
+    max-width: 1140px;
+    width: 100%;
+    max-height: 510px;
+    overflow-y: hidden;
+}
+div.tabContent img{
+    max-width: 1140px;
+    width: 100%;
+}
+.text-content{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #4C4C4C;
+    max-width: 384px;
+    margin: 20px 0 50px;
+}
+.contentText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
