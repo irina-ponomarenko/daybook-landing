@@ -38,4 +38,8 @@ $(document).ready(function () {
     $('.star-active').hover(function () {
        $('.hint').toggleClass('active-hint');
     });
+
+    $('.close-block').click(function () {
+       $('.info-block-map').css('display', 'none');
+    });
 });

@@ -490,10 +490,14 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 100px 0;
+    margin-top: 100px;
+}
+.margin-top-50{
+    margin-top: 50px;
 }
 .more-info,
-.create{
+.create,
+.all-service{
     border: none;
     background-color: #5E0DFF;
     border-radius: 30px;
@@ -512,6 +516,23 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     margin: 0 auto;
     display: flex;
     justify-content: center;
+}
+.all-service{
+    background-color: transparent;
+    border: 2px solid #5E0DFF;
+    color: #262626;
+    width: 280px;
+}
+.all-service:hover{
+    transition: .3s;
+    background-color: #5E0DFF;
+    color: #ffffff;
+}
+.more-info{
+    margin-top: 100px;
+}
+.margin-top-117{
+    margin-top: 117px;
 }
 .margin-top-100{
     margin-top: 100px;
@@ -884,11 +905,13 @@ div.tabContent img{
     color: #FFFFFF;
     position: absolute;
     top: 30%;
-    left: 44%;
+    left: 0;
+    right: 0;
 }
 .yellow-pointer .number-school{
     top: 27%;
-    left: 35%;
+    right: 0;
+    left: 0;
 }
 .info-block-map{
     padding: 40px 20px;
@@ -930,4 +953,124 @@ div.tabContent img{
     position: absolute;
     right: 22px;
     top: 44px;
+}
+.padding-bottom-none{
+    padding-bottom: 0;
+}
+.card-title-block .card-text-service{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #B2B2B2;
+}
+.service{
+    margin-bottom: 20px !important;
+}
+.color-dark{
+    color: #262626 !important;
+}
+.renewal-card{
+    background-color: #ffffff;
+    padding: 40px 20px;
+    max-width: 550px;
+    width: 100%;
+    cursor: pointer;
+}
+.renewal-card:hover{
+    transition: .3s;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+.renewal-card-title{
+    font-family: 'Mariupol';
+    line-height: 40px;
+    font-size: 40px;
+    letter-spacing: 0.01em;
+    color: #5E0DFF;
+    margin-bottom: 40px;
+}
+.container-renewal-info-title{
+    font-family: 'Mariupol';
+    line-height: 24px;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    color: #262626;
+    margin-bottom: 20px;
+}
+.info-renewal{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #B3B3B3;
+}
+.renewal-card{
+    margin-right: 40px;
+}
+.renewal-card:nth-child(2n){
+    margin-right: 0;
+}
+.wrapper-renewal{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.wrapper-renewal:last-child{
+    margin-bottom: 0;
+}
+
+/*----------------footer------------*/
+
+.footer{
+    padding: 150px 0;
+    background-color: #ffffff;
+}
+.top-footer{
+    margin-bottom: 100px;
+}
+.title-footer{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #B3B3B3;
+    margin-bottom: 40px;
+}
+.phone,
+.contact-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.number-phone span,
+.contact span{
+    font-family: 'Mariupol';
+    line-height: 46px;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    color: #262626;
+}
+.social-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-list li{
+    width: 24px;
+    height: 24px;
+}
+.social-list li a i{
+    font-size: 20px;
+}
+.social-list li a i:hover{
+    transition: .3s;
+    color: #5E0DFF;
 }
