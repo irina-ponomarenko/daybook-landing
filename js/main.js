@@ -34,4 +34,8 @@ $(document).ready(function () {
 
         //return false;
     });
+
+    $('.star-active').hover(function () {
+       $('.hint').toggleClass('active-hint');
+    });
 });

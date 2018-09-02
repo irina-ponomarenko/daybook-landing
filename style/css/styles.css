@@ -283,11 +283,13 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     cursor: pointer;
 }
 .add-account:hover,
-.more-info:hover{
+.more-info:hover,
+.create:hover{
     transition: .3s;
     background-color: #6E26FF;
 }
-.more-info:hover{
+.more-info:hover,
+.create:hover{
     color: #ffffff;
 }
 .wrapper-slider{
@@ -490,7 +492,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     align-items: flex-start;
     margin: 100px 0;
 }
-.more-info{
+.more-info,
+.create{
     border: none;
     background-color: #5E0DFF;
     border-radius: 30px;
@@ -509,6 +512,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     margin: 0 auto;
     display: flex;
     justify-content: center;
+}
+.margin-top-100{
+    margin-top: 100px;
 }
 .background-grey{
     background-color: #F2F2F2;
@@ -728,4 +734,200 @@ div.tabContent img{
     align-items: center;
     justify-content: center;
 }
+.number{
+    font-family: 'Mariupol';
+    line-height: 40px;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    color: #5E0DFF;
+}
+.card-role{
+    background-color: #ffffff;
+    padding: 40px 20px 20px;
+    max-width: 353px;
+    width: 100%;
+    margin-right: 40px;
+}
+.card-role:last-child{
+    margin-right: 0;
+}
+.name-person p,
+.star-active{
+    font-family: 'Mariupol';
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    color: #262626;
+}
+.star-active{
+    cursor: pointer;
+    color: #5E0DFF;
+    margin-left: 5px;
+}
+.hint-wrapper{
+    position: relative;
+}
+.name-person{
+    display: flex;
+    align-items: flex-start;
+    margin: 40px 0 20px;
+}
+.hint{
+    padding: 12px 0 12px 20px;
+    position: absolute;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    width: 300px;
+    cursor: pointer;
+    top: -14px;
+    left: 30px;
+    display: none;
+}
+.container-hint{
+    position: relative;
+}
+.container-hint p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #262626;
+}
+.container-hint:before{
+    content: '';
+    position: absolute;
+    top: 22%;
+    left: -29px;
+    background: url("../../images/hint.svg") no-repeat;
+    width: 15px;
+    height: 15px;
+}
+.active-hint{
+    transition: .3s;
+    display: block !important;
+}
+.percent,
+.percent span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #B3B3B3;
+}
+.wrapper-progress-line{
+    width: 100%;
+    height: 2px;
+    background-color: #E5E5E5;
+    position: relative;
+    margin-top: 10px;
+}
+.progress-line,
+.progress-line-parents,
+.progress-line-student{
+    height: 2px;
+    background-color: #5E0DFF;
+    position: absolute;
+    left: 0;
+    right: 76%;
+}
+.progress-line-parents{
+    right: 18%;
+}
+.progress-line-student{
+    right: 51%;
+}
+.map{
+    width: 100%;
+    max-height: 600px;
+    overflow-y: hidden;
+    position: relative;
+}
+.map img{
+    width: 100%;
+}
+.pointer,
+.yellow-pointer{
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.label{
+    width: 24px !important;
+    height: 24px;
+    position: absolute;
+    left: 53%;
+    top: 44%;
+}
+.yellow-pointer{
+    left: 55%;
+    top: 48%;
+}
+.pointer-img{
+    width: 100%;
+    position: relative;
+}
+.number-school{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    top: 30%;
+    left: 44%;
+}
+.yellow-pointer .number-school{
+    top: 27%;
+    left: 35%;
+}
+.info-block-map{
+    padding: 40px 20px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    width: 360px;
+}
+.container-info-map{
 
+}
+.title-info-map{
+    font-family: 'Mariupol';
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    color: #262626;
+    margin-bottom: 20px;
+}
+.additionally-info{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #B3B3B3;
+}
+.close-block{
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    background-image: url("../../images/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    right: 22px;
+    top: 44px;
+}
