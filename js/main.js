@@ -42,4 +42,13 @@ $(document).ready(function () {
     $('.close-block').click(function () {
        $('.info-block-map').css('display', 'none');
     });
+
+    $('.burger-btn').click(function () {
+        $('.background-dark').addClass('open-background');
+        $('.wrapper-navigation').addClass('open-menu');
+    });
+    $('.burger-btn-close').click(function () {
+        $('.background-dark').removeClass('open-background');
+        $('.wrapper-navigation').removeClass('open-menu');
+    });
 });

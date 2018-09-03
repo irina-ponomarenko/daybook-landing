@@ -1091,6 +1091,9 @@ div.tabContent img{
     z-index: 1000;
     display: none;
 }
+.open-background{
+    display: block;
+}
 .wrapper-navigation{
     display: none;
     align-items: center;
@@ -1100,6 +1103,9 @@ div.tabContent img{
     bottom: 0;
     z-index: 10000;
     max-height: 100vh;
+}
+.open-menu{
+    display: flex;
 }
 .portal,
 .market{
@@ -1213,4 +1219,37 @@ div.tabContent img{
  }
 .list-nav-market li:last-child{
     margin-bottom: 0;
+}
+.wrapper-burger-btn-close{
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    display: flex;
+    align-items: center;
+}
+.close-btn{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: #B3B3B3;
+}
+.burger-btn-close{
+    border: none;
+    background-color: #5E0DFF;
+    width: 54px;
+    height: 54px;
+    border-radius: 100%;
+    background-image: url("../../images/close-btn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.burger-btn-close:hover{
+    transition: .3s;
+    background-color: #6E26FF;
 }
