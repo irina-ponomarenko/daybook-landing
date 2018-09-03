@@ -61,4 +61,16 @@ $(document).ready(function () {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 500);
     });
+
+
+
+    if ($(window).width() <= 360) {
+        $('.chevron-down').click(function () {
+            $(this)
+                .toggleClass('chevron-up')
+                .parent()
+                .find('.info-card')
+                .toggleClass('open-info-card');
+        });
+    }
 });
