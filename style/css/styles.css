@@ -371,7 +371,7 @@ body{
     position: absolute;
     cursor: pointer;
 }
-.down-btn span{
+.down-btn a{
     position: relative;
     padding-left: 36px;
     font-family: 'Roboto';
@@ -383,7 +383,7 @@ body{
     color: #B3B3B3;
 
 }
-.down-btn span:before{
+.down-btn a:before{
     content: '';
     position: absolute;
     background: url("../../images/scroll-icon.svg") no-repeat;
@@ -392,11 +392,11 @@ body{
     left: 0;
     top: -4px;
 }
-.down-btn span:hover{
+.down-btn a:hover{
     transition: .3s;
     color: #262626;
 }
-.down-btn span:hover:before{
+.down-btn a:hover:before{
     content: '';
     position: absolute;
     background: url("../../images/scroll-icon-hover.svg") no-repeat;
@@ -1093,19 +1093,22 @@ div.tabContent img{
 }
 .open-background{
     display: block;
+    transition: .3s;
 }
 .wrapper-navigation{
-    display: none;
+    display: flex;
     align-items: center;
     position: fixed;
-    right: 0;
+    right: -883px;
     top: 0;
     bottom: 0;
     z-index: 10000;
     max-height: 100vh;
+    transition: .5s;
 }
 .open-menu{
-    display: flex;
+    right: 0;
+    transition: .5s;
 }
 .portal,
 .market{
