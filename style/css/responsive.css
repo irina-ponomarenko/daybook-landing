@@ -4,7 +4,103 @@
 }
 
 @media only screen and (max-width: 768px) and (min-width: 360px) {
-
+    .navigation-logo,
+    .nav-list{
+        display: none;
+    }
+    .header{
+        padding: 20px 40px 70px;
+    }
+    .logo-wrapper {
+        max-width: 78px;
+    }
+    .logo-wrapper img {
+        max-width: 78px;
+    }
+    .container-header{
+        flex-direction: column-reverse;
+    }
+    .img-header img {
+        max-width: 453px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .container-info-header{
+        margin-top: 100px;
+    }
+    .wrapper-slider {
+        margin-left: 55px;
+        max-width: 393px;
+    }
+    .bottom-indicators{
+        margin-right: 76%;
+    }
+    .content-text {
+        padding-bottom: 60px;
+    }
+    .bottom-indicators {
+        bottom: -74px;
+    }
+    .social li a i{
+        font-size: 20px;
+    }
+    .social li {
+        margin-right: 30px;
+    }
+    .market {
+        padding-right: 40px;
+    }
+    .wrapper-burger-btn-close {
+        top: 20px;
+        right: 40px;
+    }
+    .close-btn{
+        display: none;
+    }
+    .title-portal,
+    .title-market{
+        font-size: 30px;
+        padding-top: 60px;
+        max-width: 50%;
+        width: 50%;
+        white-space: nowrap;
+    }
+    .wrapper-navigation{
+        width: 97%;
+        top: 183px;
+        right: 10px;
+        left: 10px;
+        display: none;
+    }
+    .open-menu {
+        display: flex;
+        transition: .5s;
+    }
+    .portal, .market {
+        max-width: 480px;
+        width: 100%;
+        padding-right: 0;
+        padding-top: 60px;
+        padding-left: 60px;
+        height: 100vh;
+    }
+    .btn-portal-wrapper,
+    .list-nav-market{
+        margin-top: 40px;
+    }
+    .market{
+        background-color: #ffffff;
+        position: relative;
+    }
+    .market:before{
+        content: '';
+        position: absolute;
+        background: url("../../images/hint.svg") no-repeat;
+        top: -8px;
+        right: 12%;
+        width: 15px;
+        height: 15px;
+    }
 }
 @media only screen and (max-width: 360px){
 

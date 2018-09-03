@@ -24,6 +24,7 @@ $(document).ready(function () {
     });
 
     $('#tabs li a').click(function () {
+        event.preventDefault();
         tabContentObj.hide();
         $('ul#tabs').find('li.selected').removeClass('selected');
         var currentAncorObj = $(this);
@@ -46,10 +47,12 @@ $(document).ready(function () {
     $('.burger-btn').click(function () {
         $('.background-dark').addClass('open-background');
         $('.wrapper-navigation').addClass('open-menu');
+        $('.wrapper-burger-btn-close').css('display', 'flex');
     });
     $('.burger-btn-close').click(function () {
         $('.background-dark').removeClass('open-background');
         $('.wrapper-navigation').removeClass('open-menu');
+        $('.wrapper-burger-btn-close').css('display', 'none');
     });
 
     $("#menu").on("click","a", function (event) {

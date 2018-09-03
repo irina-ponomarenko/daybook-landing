@@ -1093,7 +1093,7 @@ div.tabContent img{
 }
 .open-background{
     display: block;
-    transition: .3s;
+    transition: .5s;
 }
 .wrapper-navigation{
     display: flex;
@@ -1227,8 +1227,11 @@ div.tabContent img{
     position: absolute;
     top: 50px;
     right: 60px;
-    display: flex;
     align-items: center;
+    display: none;
+    position: fixed;
+    z-index: 1000000;
+    transition: .5s;
 }
 .close-btn{
     font-family: 'Roboto';
