@@ -143,6 +143,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .display-block {
     display: block !important;
 }
+body{
+    position: relative;
+}
 
 /*-----------------------------header------------------------------*/
 .header{
@@ -1073,4 +1076,141 @@ div.tabContent img{
 .social-list li a i:hover{
     transition: .3s;
     color: #5E0DFF;
+}
+
+/*--------------------nav-menu---------------*/
+
+.background-dark{
+    background-color: #262626;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: none;
+}
+.wrapper-navigation{
+    display: none;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10000;
+    max-height: 100vh;
+}
+.portal,
+.market{
+    max-width: 480px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 120px;
+    background-color: #ffffff;
+    padding-top: 200px;
+    height: 100vh;
+}
+.market{
+    padding-right: 100px;
+    background-color: #F2F2F2;
+}
+
+.title-portal,
+.title-market{
+    font-family: 'Mariupol';
+    line-height: 40px;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    color: #262626;
+    margin-bottom: 20px;
+}
+.title-market{
+    color: #5E0DFF;
+    white-space: nowrap;
+}
+.portal-link,
+.market-link{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #B3B3B3
+}
+.portal-link:hover,
+.market-link:hover{
+    transition: .3s;
+    color: #5E0DFF;
+}
+.sign-in-img,
+.registered-img{
+    position: relative;
+    font-family: 'Mariupol';
+    line-height: 24px;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    color: #4C4C4C;
+    padding-left: 44px;
+}
+.btn-sign-in{
+    margin-bottom: 24px;
+}
+.sign-in-img:before{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url("../../images/sign.svg") no-repeat center;
+    left: 0;
+}
+.registered-img:before{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url("../../images/registered.svg") no-repeat center;
+    left: 0;
+}
+.btn-portal-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 72px;
+}
+.portal-services li a{
+    font-family: 'Mariupol';
+    line-height: 24px;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    color: #4C4C4C;
+}
+.portal-services li:first-child{
+    margin-bottom: 24px;
+}
+.portal-services li a:hover,
+.sign-in-img:hover,
+.registered-img:hover,
+.list-nav-market li a:hover{
+    transition: .3s;
+    color: #5E0DFF;
+}
+.list-nav-market{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.list-nav-market li a {
+    font-family: 'Mariupol';
+    line-height: 24px;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    color: #4C4C4C;
+}
+.list-nav-market li{
+     margin-bottom: 24px;
+ }
+.list-nav-market li:last-child{
+    margin-bottom: 0;
 }
